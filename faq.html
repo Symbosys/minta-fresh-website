@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Minta Fresh</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Syne', 'sans-serif'],
+                    },
+                    colors: {
+                        'minta-primary': '#8719C6',   // Deep Purple
+                        'minta-secondary': '#f9eae9', // Soft Pink
+                        'minta-accent': '#b58ff0',    // Lavender
+                        'minta-highlight': '#ff9fa3', // Coral/Peach
+                        'minta-bg': '#fafafa',        // Default background
+                        'minta-text': '#222222',      // Main text
+                        'minta-text-sec': '#4a4a4a',  // Secondary text
+                        'minta-white': '#ffffff'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #fafafa;
+            color: #222222;
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fafafa;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #8719C6;
+            border-radius: 4px;
+        }
+
+        /* Selection Color */
+        ::selection {
+            background: #b58ff0;
+            color: white;
+        }
+
+        /* FAQ Accordion Styling */
+        details {
+            background-color: white;
+            border: 1px solid #f9eae9;
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        details:hover {
+            border-color: #b58ff0;
+            box-shadow: 0 4px 20px rgba(135, 25, 198, 0.05);
+        }
+        details[open] {
+            border-color: #8719C6;
+            box-shadow: 0 4px 20px rgba(135, 25, 198, 0.1);
+        }
+        summary {
+            padding: 1.5rem;
+            font-family: 'Syne', sans-serif;
+            font-weight: 600;
+            color: #222222;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: #8719C6;
+            transition: transform 0.3s ease;
+        }
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+        .faq-content {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            color: #4a4a4a;
+            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Smooth Fade In */
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="antialiased bg-minta-bg">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 w-full z-[60] px-6 py-6 bg-white/90 backdrop-blur-md border-b border-minta-secondary flex justify-between items-center text-minta-text shadow-sm">
+        <div class="text-2xl font-display font-bold tracking-tighter cursor-pointer" onclick="window.location.href='index.html'">
+            MINTA FRESH<span class="text-minta-primary">.</span>
+        </div>
+        
+        <button class="border border-minta-text/20 px-6 py-2 rounded-full font-sans text-xs uppercase tracking-widest hover:bg-minta-primary hover:text-white hover:border-transparent transition-all duration-300">
+            Download App
+        </button>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-24 pb-12 px-6 bg-minta-secondary">
+        <div class="container mx-auto max-w-4xl text-center fade-in">
+            <span class="text-minta-primary text-xs font-bold tracking-[0.2em] uppercase mb-4 block">Help Center</span>
+            <h1 class="text-4xl md:text-6xl font-display font-black text-minta-text mb-6">Frequently Asked Questions</h1>
+            <p class="text-minta-text-sec text-lg max-w-2xl mx-auto font-sans">
+                Everything you need to know about our sourcing, quality, and delivery.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="px-6 py-16 -mt-8">
+        <div class="container mx-auto max-w-3xl fade-in" style="animation-delay: 0.2s;">
+            
+            <!-- Category: Sourcing & Quality -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-display font-bold text-minta-primary mb-6 border-b border-minta-secondary pb-2">Sourcing & Quality</h2>
+                
+                <details>
+                    <summary>Why do you say that your products are chemical-free?</summary>
+                    <div class="faq-content">
+                        Our core mission is to provide chemical-free, unadulterated food to consumers. We go directly to the fishermen or farmers without any middlemen and buy the freshest food straight from the source. We use modern, scientific transportation and packaging processes to maintain the required temperature using only natural ice as a preservative.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Are there really chemicals used in fish available locally?</summary>
+                    <div class="faq-content">
+                        Unfortunately, yes. We have observed that a large percentage of fish available in the local market has Ammonia, and a smaller percentage contains Formalin. We strive to offer a chemical-free alternative.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>How can you confidently say that your meats do not have hormones?</summary>
+                    <div class="faq-content">
+                        We prioritize health over profit margins. We ensure no growth promoters like hormones or antibiotics are used. This often means our birds are smaller (1-1.3 kg after cleaning) compared to market vendors, but this results in more tender and tastier meat.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>What about antibiotics in the Chicken?</summary>
+                    <div class="faq-content">
+                        We source from institutional farmers who are FSSAI/HACCP certified and conduct lab tests on every batch. While antibiotics are sometimes necessary in early stages for health, our farmers follow a strict withdrawal method. This ensures the antibiotic has completely dissipated from the bird's system well before slaughter, ensuring no residue in your food.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Are all your Chicken Free Range?</summary>
+                    <div class="faq-content">
+                        No, only the Country Chicken varieties are Free Range birds. The others are reared naturally in large areas to avoid cross-infection but do not qualify as Free Range.
+                    </div>
+                </details>
+            </div>
+
+            <!-- Category: Delivery & Freshness -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-display font-bold text-minta-primary mb-6 border-b border-minta-secondary pb-2">Delivery & Freshness</h2>
+                
+                <details>
+                    <summary>How do you manage to deliver it so fresh?</summary>
+                    <div class="faq-content">
+                        We procure the day's catch hours after fishermen return to shore. Our processing centers and dedicated logistics network (no third-party couriers) ensure the product moves from source to your doorstep in the fastest time possible.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>How fresh is the seafood?</summary>
+                    <div class="faq-content">
+                        Seafood typically reaches your kitchen within 20 to 35 hours of the catch landing. It is never treated with chemicals like Formalin, Chlorine, or Ammonia, preserving its natural taste and safety.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Why do you charge for delivery service?</summary>
+                    <div class="faq-content">
+                        We operate on thin margins to provide fresher fish at potentially lower prices than the market. The delivery charge helps us break even on our specialized logistics. As volumes increase, we hope to lower this cost.
+                    </div>
+                </details>
+            </div>
+
+            <!-- Category: Payments & Refunds -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-display font-bold text-minta-primary mb-6 border-b border-minta-secondary pb-2">Payments & Refunds</h2>
+                
+                <details>
+                    <summary>What are the payment options supported?</summary>
+                    <div class="faq-content">
+                        We support both online payments (Credit/Debit Card, Net Banking, UPI, Wallet) and Cash on Delivery. No extra fees are charged for any method.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Is my credit card information safe?</summary>
+                    <div class="faq-content">
+                        Yes. We do not store credit card details. All transactions are processed through trusted gateways like PhonePe/Razorpay.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>I cancelled my order. How will I get my money back?</summary>
+                    <div class="faq-content">
+                        If you paid online, the amount will be credited back to your source account within 5-7 working days.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>What if my transaction fails?</summary>
+                    <div class="faq-content">
+                        If a transaction fails but money is debited, it will be refunded within 7 working days. You can retry payment on the site or switch to Cash on Delivery.
+                    </div>
+                </details>
+            </div>
+
+            <!-- Grievance Redressal -->
+            <div class="bg-minta-secondary/50 p-8 rounded-2xl border border-minta-secondary text-center mt-12">
+                <h3 class="font-display font-bold text-xl text-minta-text mb-2">Still have questions?</h3>
+                <p class="text-minta-text-sec mb-4">We are here to help you with any grievances or suggestions.</p>
+                <a href="mailto:info@mintafresh.com" class="inline-block px-8 py-3 bg-minta-primary text-white font-bold rounded-full hover:bg-minta-text transition-colors">
+                    Contact Support
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-minta-secondary text-center md:text-left mt-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h2 class="font-display font-bold text-3xl text-minta-primary">
+                    MINTA FRESH
+                </h2>
+                <p class="text-minta-text-sec text-sm mt-2">
+                    &copy; 2025 Minta Fresh. All rights reserved.
+                </p>
+            </div>
+
+            <nav class="flex flex-col sm:flex-row gap-4 sm:gap-6 text-sm font-sans text-minta-text-sec justify-center sm:justify-start text-center sm:text-left">
+                <a href="terms&condition.html" class="hover:text-minta-primary transition-colors cursor-hover block sm:inline-block">Terms & Conditions</a>
+                <a href="privacy_policy.html" class="hover:text-minta-primary transition-colors cursor-hover block sm:inline-block">Privacy Policy</a>
+                <a href="corporate.html" class="hover:text-minta-primary transition-colors cursor-hover block sm:inline-block">Corporate Social Responsibility Policy</a>
+                <a href="contact-us.html" class="hover:text-minta-primary transition-colors cursor-hover block sm:inline-block">Contact Us</a>
+                <a href="faq.html" class="hover:text-minta-primary transition-colors cursor-hover block sm:inline-block">FAQ</a>
+                <a href="refund_policy.html" class="hover:text-minta-primary transition-colors cursor-hover block sm:inline-block">Refund Policy</a>
+            </nav>
+
+            <div class="flex gap-6 justify-center md:justify-end">
+                <a href="#" class="text-minta-text-sec hover:text-minta-primary transition-colors text-2xl cursor-hover"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="text-minta-text-sec hover:text-minta-primary transition-colors text-2xl cursor-hover"><i class="ri-twitter-x-line"></i></a>
+                <a href="#" class="text-minta-text-sec hover:text-minta-primary transition-colors text-2xl cursor-hover"><i class="ri-facebook-fill"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
