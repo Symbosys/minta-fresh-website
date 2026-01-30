@@ -155,9 +155,9 @@ export default function DownloadSection() {
                                 <br />
                                 INSTALL
                             </p>
-                            <p className="text-[#ff9fa3] text-xs mt-1 uppercase tracking-widest">
+                            {/* <p className="text-[#ff9fa3] text-xs mt-1 uppercase tracking-widest">
                                 Direct Link
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </div>
