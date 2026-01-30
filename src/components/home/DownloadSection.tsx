@@ -119,7 +119,7 @@ export default function DownloadSection() {
                             style={{ fontFamily: "var(--font-syne), sans-serif" }}
                         >
                             Quick & Fresh <br />
-                            <span className="text-[#b58ff0]">Delivery.</span>
+                            <span className="text-minta-accent">Delivery.</span>
                         </h2>
                         <p className="ae-sub text-white/70 leading-relaxed">
                             Order premium cuts with a single tap. Minimal friction, maximum
@@ -155,9 +155,9 @@ export default function DownloadSection() {
                                 <br />
                                 INSTALL
                             </p>
-                            {/* <p className="text-[#ff9fa3] text-xs mt-1 uppercase tracking-widest">
-                                Direct Link
-                            </p> */}
+                            <p className="text-[#ff9fa3] text-xs mt-1 uppercase tracking-widest">
+                                Direct Links
+                            </p>
                         </div>
                     </div>
                 </div>
