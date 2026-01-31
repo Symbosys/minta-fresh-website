@@ -9,6 +9,7 @@ import Marquee from "@/components/home/Marquee";
 import ProductsSection from "@/components/home/ProductsSection";
 import EliteSection from "@/components/home/EliteSection";
 import DownloadSection from "@/components/home/DownloadSection";
+import VendorSection from "@/components/home/VendorSection";
 
 export default function Home() {
   return (
@@ -35,6 +36,10 @@ export default function Home() {
 
         {/* Products Section */}
         <ProductsSection />
+
+
+        {/* Vendor Section */}
+        <VendorSection />
 
         {/* Elite Membership Section */}
         <EliteSection />

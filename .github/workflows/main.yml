@@ -39,7 +39,7 @@ jobs:
             echo "pulling latest docker image"
             sudo docker pull mintafresh/website:latest
 
-            echo "Navigating to minta-fresh directory..."
+            echo "Navigating to minta-fresh-website directory..."
             cd /root/minta-fresh-website
 
             echo "Rebuilding and restarting services..."
