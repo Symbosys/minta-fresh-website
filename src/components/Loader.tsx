@@ -29,7 +29,7 @@ export default function Loader() {
     return (
         <div ref={loaderRef} className="loader">
             <h1
-                className="text-4xl font-bold text-[#8719C6] tracking-widest uppercase"
+                className="text-4xl font-bold text-minta-primary tracking-widest uppercase"
                 style={{ fontFamily: "var(--font-syne), sans-serif" }}
             >
                 Minta Fresh

@@ -12,7 +12,7 @@ export default function Footer() {
                         MINTA FRESH
                     </h2>
                     <p className="text-[#4a4a4a] text-sm mt-2">
-                        Minta Fresh is a brand of Minta Club Pvt. Ltd
+                        Minta Fresh is a Unit of Minta Club Pvt. Ltd
                     </p>
                     <p className="text-[#4a4a4a] text-sm mt-2">
                         &copy; 2025 Minta Fresh. All rights reserved.
