@@ -1,8 +1,8 @@
 export default function HeroSection() {
     return (
-        <section className="hero-section overflow-hidden flex items-center justify-center h-screen w-full relative">
+        <section className="hero-section overflow-hidden flex items-center justify-center h-screen w-screen max-w-full relative">
             <video
-                className="absolute inset-0 w-full h-full object-cover z-0"
+                className="absolute inset-0 w-full h-full object-cover z-0 min-w-full"
                 autoPlay
                 muted
                 loop
