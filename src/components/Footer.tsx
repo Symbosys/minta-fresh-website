@@ -60,7 +60,8 @@ export default function Footer() {
 
                 <div className="flex gap-6 justify-center md:justify-end">
                     <a
-                        href="#"
+                        target="_blank"
+                        href="https://www.instagram.com/mintafresh_/"
                         className="text-[#4a4a4a] hover:text-[#8719C6] transition-colors text-2xl"
                     >
                         <i className="ri-instagram-line"></i>

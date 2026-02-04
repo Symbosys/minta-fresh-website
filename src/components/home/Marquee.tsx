@@ -34,7 +34,7 @@ export default function Marquee() {
                 <i className="ri-asterisk"></i>
                 <span>No Antibiotics</span>
                 <i className="ri-asterisk"></i>
-                <span>30 minutes delivery</span>
+                <span>30 - 35 minutes delivery</span>
                 <i className="ri-asterisk"></i>
                 <span>Fresh and Quick</span>
                 <i className="ri-asterisk"></i>

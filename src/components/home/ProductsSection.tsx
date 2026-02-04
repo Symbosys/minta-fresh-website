@@ -33,7 +33,7 @@ export default function ProductsSection() {
     return (
         <section
             id="about"
-            className="relative bg-[#fafafa] min-h-screen py-24 overflow-hidden z-20"
+            className="relative bg-[#fafafa] min-h-screen  overflow-hidden z-20"
         >
             <div ref={containerRef} className="pin-container flex h-screen w-[300%]">
                 {/* Chicken Panel */}

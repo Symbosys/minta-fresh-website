@@ -64,11 +64,11 @@ export default function VendorSection() {
 
                 {/* Content Side */}
                 <div ref={contentRef} className="md:w-1/2 space-y-8">
-                    <div className="inline-block px-4 py-1 border border-minta-primary rounded-full bg-minta-primary/5 mb-2">
+                    {/* <div className="inline-block px-4 py-1 border border-minta-primary rounded-full bg-minta-primary/5 mb-2">
                         <span className="text-minta-primary text-xs font-bold tracking-[0.2em] uppercase">
                             Partner with Us
                         </span>
-                    </div>
+                    </div> */}
                     <h2
                         className="text-5xl md:text-6xl font-bold text-minta-text leading-tight"
                         style={{ fontFamily: "var(--font-syne), sans-serif" }}

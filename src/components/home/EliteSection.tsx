@@ -1,187 +1,110 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 export default function EliteSection() {
-    const sectionRef = useRef<HTMLElement>(null);
-
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-
-        const eliteTl = gsap.timeline({
-            scrollTrigger: {
-                trigger: sectionRef.current,
-                start: "top 60%",
-                toggleActions: "play none none reverse",
-            },
-        });
-
-        eliteTl
-            .from(".elite-tag", {
-                scale: 0.8,
-                opacity: 0,
-                duration: 1,
-                ease: "power3.out",
-            })
-            .from(
-                ".elite-heading",
-                { y: 50, opacity: 0, duration: 1.2, ease: "power4.out" },
-                "-=0.8"
-            )
-            .from(
-                ".elite-desc",
-                { y: 30, opacity: 0, duration: 1, ease: "power3.out" },
-                "-=0.8"
-            );
-
-        gsap.set(".elite-accordions", { perspective: 2000 });
-        eliteTl
-            .from(
-                ".elite-panel",
-                {
-                    y: 400,
-                    rotationX: 15,
-                    opacity: 0,
-                    scale: 0.9,
-                    duration: 1.5,
-                    stagger: { amount: 0.4, from: "center" },
-                    ease: "expo.out",
-                },
-                "-=1.0"
-            )
-            .to(
-                ".elite-flash",
-                { opacity: 0.15, duration: 0.8, ease: "power2.out" },
-                "-=1.2"
-            );
-
-        return () => {
-            ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-        };
-    }, []);
+    const benefits = [
+        {
+            icon: "ri-vip-crown-fill",
+            title: "Priority Access",
+            description: "Be first in line for fresh cuts and exclusive products before anyone else.",
+            highlight: "VIP",
+        },
+        {
+            icon: "ri-rocket-2-fill",
+            title: "Lightning Delivery",
+            description: "Get your orders delivered in 30 - 35 minutes with free shipping on all orders.",
+            highlight: "FREE",
+        },
+        {
+            icon: "ri-discount-percent-fill",
+            title: "Exclusive Savings",
+            description: "Enjoy automatic discounts and special offers reserved only for Elite members.",
+            highlight: "",
+        },
+    ];
 
     return (
         <section
-            ref={sectionRef}
             id="elite"
-            className="relative min-h-screen flex flex-col justify-center py-20 bg-[#fafafa] z-20 overflow-hidden"
+            className="relative py-24 md:py-32 bg-gradient-to-b from-white to-[#fafafa]"
         >
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[50vh] bg-gradient-to-b from-[#8719C6]/10 to-transparent opacity-30 pointer-events-none"></div>
-            <div className="elite-flash"></div>
+            {/* Subtle Background Elements */}
+            <div className="absolute inset-0 pointer-events-none">
+                <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#8719C6]/5 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#8719C6]/3 rounded-full blur-3xl"></div>
+            </div>
 
             <div className="container mx-auto px-6 relative z-10">
-                <div className="elite-title-group flex flex-col items-center mb-16 text-center">
-                    <div className="elite-tag inline-block px-4 py-1 border border-[#8719C6] rounded-full bg-[#8719C6]/5 mb-4">
-                        <span className="text-[#8719C6] text-xs font-bold tracking-[0.3em] uppercase">
-                            The Vault
+                {/* Header Section */}
+                <div className="text-center mb-16 md:mb-20">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#8719C6]/10 border border-[#8719C6]/20 rounded-full mb-6">
+                        <i className="ri-sparkling-fill text-[#8719C6]"></i>
+                        <span className="text-[#8719C6] text-sm font-semibold tracking-wide uppercase">
+                            Elite Membership
                         </span>
                     </div>
+
                     <h2
-                        className="elite-heading text-6xl md:text-8xl font-black text-[#222222] leading-none"
+                        className="text-4xl md:text-6xl lg:text-7xl font-bold text-[#1a1a1a] leading-tight mb-6"
                         style={{ fontFamily: "var(--font-syne), sans-serif" }}
                     >
-                        UNLOCK <span className="gradient-text">ELITE</span>
+                        Unlock <span className="text-[#8719C6]">Elite</span> Benefits
                     </h2>
-                    <p className="elite-desc text-[#4a4a4a] mt-6 max-w-md mx-auto">
-                        No cards. No limits. Just pure access.
+
+                    <p className="text-[#666] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                        Join our exclusive membership program and experience premium perks that elevate your shopping.
                     </p>
                 </div>
 
-                <div className="elite-accordions h-[50vh] md:h-[60vh]">
-                    {/* Panel 1 */}
-                    <div className="elite-panel group cursor-hover">
-                        <div className="panel-content-collapsed">
-                            <div className="w-px h-20 bg-[#8719C6]/30 mb-8"></div>
-                            <span
-                                className="vertical-text font-bold text-[#4a4a4a] text-xl uppercase tracking-widest group-hover:text-[#8719C6] transition-colors"
-                                style={{ fontFamily: "var(--font-syne), sans-serif" }}
-                            >
-                                Priority
-                            </span>
-                            <div className="mt-auto mb-8 text-[#4a4a4a]/50 text-2xl">
-                                <i className="ri-vip-crown-2-line"></i>
+                {/* Benefits Grid */}
+                <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-16">
+                    {benefits.map((benefit, index) => (
+                        <div
+                            key={index}
+                            className="group relative bg-white rounded-3xl p-8 pt-14 pb-10 md:p-10 md:pt-16 md:pb-12 border border-gray-100 hover:border-[#8719C6]/30 hover:shadow-xl hover:shadow-[#8719C6]/5 transition-all duration-500"
+                        >
+                            {/* Highlight Badge */}
+                            <div className="absolute top-6 right-6">
+                                <span className="px-3 py-1 bg-[#8719C6]/10 text-[#8719C6] text-xs font-bold rounded-full">
+                                    {benefit.highlight}
+                                </span>
                             </div>
-                        </div>
-                        <div className="panel-content-expanded">
-                            <i className="ri-vip-crown-fill text-6xl text-[#8719C6] mb-6"></i>
-                            <h3
-                                className="text-4xl font-bold text-[#222222] mb-4"
-                                style={{ fontFamily: "var(--font-syne), sans-serif" }}
-                            >
-                                First Access
-                            </h3>
-                            <p className="text-[#4a4a4a] max-w-xs mx-auto">
-                                Access fresh cuts only.
-                            </p>
-                        </div>
-                    </div>
 
-                    {/* Panel 2 */}
-                    <div className="elite-panel group cursor-hover">
-                        <div className="panel-content-collapsed">
-                            <div className="w-px h-20 bg-[#8719C6]/30 mb-8"></div>
-                            <span
-                                className="vertical-text font-bold text-[#4a4a4a] text-xl uppercase tracking-widest group-hover:text-[#8719C6] transition-colors"
-                                style={{ fontFamily: "var(--font-syne), sans-serif" }}
-                            >
-                                Delivery
-                            </span>
-                            <div className="mt-auto mb-8 text-[#4a4a4a]/50 text-2xl">
-                                <i className="ri-rocket-line"></i>
+                            {/* Icon */}
+                            <div className="w-16 h-16 bg-gradient-to-br from-[#8719C6] to-[#a855f7] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i className={`${benefit.icon} text-2xl text-white`}></i>
                             </div>
-                        </div>
-                        <div className="panel-content-expanded">
-                            <i className="ri-speed-line text-6xl text-[#8719C6] mb-6"></i>
-                            <h3
-                                className="text-4xl font-bold text-[#222222] mb-4"
-                                style={{ fontFamily: "var(--font-syne), sans-serif" }}
-                            >
-                                Lightning Speed
-                            </h3>
-                            <p className="text-[#4a4a4a] max-w-xs mx-auto">
-                                30 min & <span className="text-[#8719C6]">Free</span> delivery.
-                            </p>
-                        </div>
-                    </div>
 
-                    {/* Panel 3 */}
-                    <div className="elite-panel group cursor-hover">
-                        <div className="panel-content-collapsed">
-                            <div className="w-px h-20 bg-[#8719C6]/30 mb-8"></div>
-                            <span
-                                className="vertical-text font-bold text-[#4a4a4a] text-xl uppercase tracking-widest group-hover:text-[#8719C6] transition-colors"
-                                style={{ fontFamily: "var(--font-syne), sans-serif" }}
-                            >
-                                Savings
-                            </span>
-                            <div className="mt-auto mb-8 text-[#4a4a4a]/50 text-2xl">
-                                <i className="ri-wallet-3-line"></i>
-                            </div>
-                        </div>
-                        <div className="panel-content-expanded">
-                            <i className="ri-percent-line text-6xl text-[#8719C6] mb-6"></i>
+                            {/* Content */}
                             <h3
-                                className="text-4xl font-bold text-[#222222] mb-4"
+                                className="text-xl md:text-2xl font-bold text-[#1a1a1a] mb-3"
                                 style={{ fontFamily: "var(--font-syne), sans-serif" }}
                             >
-                                Flat Discount Offers
+                                {benefit.title}
                             </h3>
-                            <p className="text-[#4a4a4a] max-w-xs mx-auto">
-                                Automatic discount on orders.
+
+                            <p className="text-[#666] leading-relaxed pb-1">
+                                {benefit.description}
                             </p>
                         </div>
-                    </div>
+                    ))}
                 </div>
 
-                <div className="mt-12 text-center">
-                    <button
-                        className="px-12 py-4 border border-[#8719C6] text-[#8719C6] hover:bg-[#8719C6] hover:text-white font-bold uppercase tracking-widest transition-all duration-300 cursor-hover"
-                        style={{ fontFamily: "var(--font-syne), sans-serif" }}
-                    >
-                        Join The Club
-                    </button>
+                {/* CTA Section */}
+                <div className="text-center">
+                    <div className="inline-flex flex-col sm:flex-row items-center gap-4">
+                        <button
+                            className="px-10 py-4 bg-[#8719C6] text-white font-bold uppercase tracking-wider rounded-full hover:bg-[#6d14a0] hover:shadow-lg hover:shadow-[#8719C6]/30 transition-all duration-300"
+                            style={{ fontFamily: "var(--font-syne), sans-serif" }}
+                        >
+                            Join Elite Now
+                        </button>
+
+
+                    </div>
+
+                    <p className="mt-6 text-[#999] text-sm">
+                        Cancel anytime • No hidden fees • Instant activation
+                    </p>
                 </div>
             </div>
         </section>

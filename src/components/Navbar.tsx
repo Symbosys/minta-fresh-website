@@ -11,16 +11,16 @@ export default function Navbar() {
         <nav
             className={`${isHomePage ? "fixed" : "sticky"
                 } top-0 w-full z-60 px-6 py-6 ${isHomePage
-                    ? "bg-transparent"
-                    : "bg-white/90 backdrop-blur-md border-b border-minta-secondary shadow-sm"
-                } flex justify-between items-center text-minta-text`}
+                    ? "bg-black"
+                    : "bg-black backdrop-blur-md border-b border-minta-secondary shadow-sm"
+                } flex justify-between items-center text-white`}
         >
             <Link
                 href="/"
                 className="text-2xl font-bold tracking-tighter cursor-pointer"
                 style={{ fontFamily: "var(--font-syne), sans-serif" }}
             >
-                MINTA FRESH<span className="text-minta-primary">.</span>
+                MINTA FRESH<span className="text-minta-primary"></span>
             </Link>
 
             {isHomePage && (

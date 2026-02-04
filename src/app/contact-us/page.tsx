@@ -52,9 +52,10 @@ export default function ContactUsPage() {
                                 Minta Club Private Limited
                             </p>
                             <p className="text-[#4a4a4a] leading-relaxed">
-                                HI-76, Harmu Colony,
+                                {/* HI-76, Harmu Colony, */}
+
                                 <br />
-                                Ranchi - 834002
+                                Ranchi, Jharkhand
                             </p>
                         </div>
 
@@ -73,16 +74,16 @@ export default function ContactUsPage() {
                                 Have a question? Drop us a line and we&apos;ll get back to you shortly.
                             </p>
                             <a
-                                href="mailto:info@mintaclub.com"
+                                href="mailto:mintaafresh@gmail.com"
                                 className="text-xl font-bold text-[#8719C6] hover:text-[#b58ff0] transition-colors border-b-2 border-[#f9eae9] hover:border-[#8719C6] pb-1"
                             >
-                                info@mintaclub.com
+                                mintaafresh@gmail.com
                             </a>
                         </div>
                     </div>
 
                     {/* Map */}
-                    <div className="mt-12 w-full h-64 bg-[#f9eae9]/50 rounded-2xl border border-[#f9eae9] flex items-center justify-center overflow-hidden relative">
+                    {/* <div className="mt-12 w-full h-64 bg-[#f9eae9]/50 rounded-2xl border border-[#f9eae9] flex items-center justify-center overflow-hidden relative">
                         <iframe
                             className="w-full h-full"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d323.7529650584459!2d85.31144818637802!3d23.357568871043153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5d0fb3d9fc771b%3A0x97d1957c5216c0c2!2sSymbosys%20-%20Software%20Company%20in%20Ranchi!5e0!3m2!1sen!2sin!4v1764234785409!5m2!1sen!2sin"
@@ -91,7 +92,7 @@ export default function ContactUsPage() {
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                         ></iframe>
-                    </div>
+                    </div> */}
                 </div>
             </main>
 

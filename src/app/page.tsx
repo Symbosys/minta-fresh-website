@@ -10,6 +10,7 @@ import ProductsSection from "@/components/home/ProductsSection";
 import EliteSection from "@/components/home/EliteSection";
 import DownloadSection from "@/components/home/DownloadSection";
 import VendorSection from "@/components/home/VendorSection";
+import LiveTrackingSection from "@/components/home/LiveTrackingSection";
 
 export default function Home() {
   return (
@@ -39,7 +40,10 @@ export default function Home() {
 
 
         {/* Vendor Section */}
-        <VendorSection />
+        {/* <VendorSection /> */}
+
+        {/* Live Tracking Section */}
+        <LiveTrackingSection />
 
         {/* Elite Membership Section */}
         <EliteSection />
