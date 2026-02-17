@@ -18,7 +18,7 @@ export default function EliteSection() {
             icon: "ri-discount-percent-fill",
             title: "Exclusive Savings",
             description: "Enjoy automatic discounts and special offers reserved only for Elite members.",
-            highlight: "",
+            highlight: "elite",
         },
     ];
 

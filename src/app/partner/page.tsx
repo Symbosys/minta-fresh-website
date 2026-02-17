@@ -1,8 +1,34 @@
+"use client"
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Image from "next/image";
+import LoginModal from "@/components/LoginModal";
+import { useState, useEffect } from "react";
+
+import Link from "next/link";
+import { getVendorProfile, logout } from "@/action/vendor";
 
 export default function PartnerPage() {
+    const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+    const [vendor, setVendor] = useState<any>(null);
+    const [showDetails, setShowDetails] = useState(false);
+
+    useEffect(() => {
+        const checkSession = async () => {
+            const res = await getVendorProfile();
+            if (res.success && res.data) {
+                setVendor(res.data);
+            }
+        };
+        checkSession();
+    }, []);
+
+    const handleLogout = async () => {
+        await logout();
+        setVendor(null);
+        setShowDetails(false);
+    };
+
     return (
         <>
             <Navbar />
@@ -19,7 +45,7 @@ export default function PartnerPage() {
                     }}
                 >
                     {/* Hero Content */}
-                    <div className="text-center px-6 relative z-10">
+                    <div className="text-center px-6 relative z-10 w-full flex flex-col items-center">
                         <h1
                             className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-white leading-tight mb-6"
                             style={{ fontFamily: "var(--font-syne), sans-serif" }}
@@ -37,12 +63,52 @@ export default function PartnerPage() {
                             Only valid for new partners in your city
                         </p>
 
-                        {/* Register Button */}
-                        <button
-                            className="bg-minta-primary hover:bg-[#6d14a0] text-white font-medium px-8 py-3 rounded-lg transition-colors text-sm mb-8 md:mb-0"
-                        >
-                            Register your shop
-                        </button>
+                        {/* Session Logic */}
+                        {vendor ? (
+                            !showDetails ? (
+                                <button
+                                    onClick={() => setShowDetails(true)}
+                                    className="bg-minta-primary hover:bg-[#6d14a0] text-white font-medium px-8 py-3 rounded-lg transition-colors text-sm mb-8 md:mb-0"
+                                >
+                                    View Application
+                                </button>
+                            ) : (
+                                <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl text-left min-w-[300px] animate-in fade-in zoom-in duration-300">
+                                    <p className="text-white/80 text-sm mb-1">Welcome back,</p>
+                                    <p className="text-white text-xl font-bold mb-4 flex items-center gap-2">
+                                        <i className="ri-user-smile-line"></i> {vendor.ownerName || vendor.mobile}
+                                    </p>
+
+                                    <div className="space-y-3">
+                                        <div className="bg-black/20 p-3 rounded-lg flex items-center justify-between">
+                                            <span className="text-white/60 text-xs">Mobile Number</span>
+                                            <span className="text-white font-mono">{vendor.mobile}</span>
+                                        </div>
+
+                                        <Link
+                                            href="/partner/onboarding"
+                                            className="block w-full text-center bg-minta-primary hover:bg-[#6d14a0] text-white font-bold py-3 rounded-lg transition-all"
+                                        >
+                                            Continue Application <i className="ri-arrow-right-line ml-1"></i>
+                                        </Link>
+
+                                        <button
+                                            onClick={handleLogout}
+                                            className="block w-full text-center bg-gray-600 hover:bg-gray-700 text-white font-medium py-3 rounded-lg transition-all text-sm"
+                                        >
+                                            Start New Registration
+                                        </button>
+                                    </div>
+                                </div>
+                            )
+                        ) : (
+                            <button
+                                onClick={() => setIsLoginModalOpen(true)}
+                                className="bg-minta-primary hover:bg-[#6d14a0] text-white font-medium px-8 py-3 rounded-lg transition-colors text-sm mb-8 md:mb-0"
+                            >
+                                Register your shop
+                            </button>
+                        )}
                     </div>
 
                     {/* White Card - Documents Section - Desktop Only (Floating) */}
@@ -272,17 +338,22 @@ export default function PartnerPage() {
                         <h3 className="text-lg font-bold text-[#1c1c1c] mb-4" style={{ fontFamily: "var(--font-syne), sans-serif" }}>
                             Ready to get started?
                         </h3>
-                        <a
-                            href="mailto:mintaafresh@gmail.com?subject=Partner%20Registration%20Inquiry"
+                        <button
+                            onClick={() => setIsLoginModalOpen(true)}
                             className="inline-block bg-minta-primary hover:bg-[#6d14a0] text-white font-medium px-8 py-3 rounded-lg transition-colors text-sm"
                         >
                             Register your shop
-                        </a>
+                        </button>
                     </div>
                 </section>
             </main>
 
             <Footer />
+
+            <LoginModal
+                isOpen={isLoginModalOpen}
+                onClose={() => setIsLoginModalOpen(false)}
+            />
         </>
     );
 }
