@@ -170,7 +170,7 @@ export default function Signature({ onNext, initialData }: SignatureProps) {
                 <button
                     onClick={handleSave}
                     disabled={isEmpty || loading}
-                    className="flex-[2] bg-minta-primary text-white font-bold py-3 rounded-xl hover:bg-[#6d14a0] transition-colors shadow-md hover:shadow-lg disabled:bg-gray-300 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                    className="flex-2 bg-minta-primary text-white font-bold py-3 rounded-xl hover:bg-[#6d14a0] transition-colors shadow-md hover:shadow-lg disabled:bg-gray-300 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                     {loading ? (
                         <>

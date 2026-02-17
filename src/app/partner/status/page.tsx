@@ -95,7 +95,7 @@ export default function PartnerStatusPage() {
                             Congratulations! Your shop has been approved. You can now start managing your inventory and accepting orders.
                         </p>
 
-                        <div className="bg-gradient-to-br from-minta-primary to-[#6d14a0] rounded-2xl p-6 text-white shadow-lg mb-8 relative overflow-hidden group">
+                        <div className="bg-linear-to-br from-minta-primary to-[#6d14a0] rounded-2xl p-6 text-white shadow-lg mb-8 relative overflow-hidden group">
                             <div className="relative z-10">
                                 <h3 className="font-bold text-lg mb-2">Download Partner App</h3>
                                 <p className="text-sm opacity-90 mb-4">Manage orders, update menu, and track earnings on the go.</p>

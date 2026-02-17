@@ -47,14 +47,14 @@ export default function LiveTrackingSection() {
                     <div className="flex justify-center">
                         <div className="relative">
                             {/* Phone Frame */}
-                            <div className="relative bg-[#2a2a2a] rounded-[2rem] p-2 shadow-2xl shadow-black/40 w-56">
+                            <div className="relative bg-[#2a2a2a] rounded-4xl p-2 shadow-2xl shadow-black/40 w-56">
                                 {/* Notch */}
                                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-5 bg-[#2a2a2a] rounded-b-xl z-20"></div>
 
                                 {/* Screen */}
-                                <div className="relative bg-[#1e1e1e] rounded-[1.5rem] overflow-hidden aspect-[9/16]">
+                                <div className="relative bg-[#1e1e1e] rounded-3xl overflow-hidden aspect-9/16">
                                     {/* Map Area */}
-                                    <div className="absolute inset-0 bg-gradient-to-b from-[#2d3748] to-[#1a202c]">
+                                    <div className="absolute inset-0 bg-linear-to-b from-[#2d3748] to-[#1a202c]">
                                         {/* Grid */}
                                         <div
                                             className="absolute inset-0 opacity-10"
@@ -105,7 +105,7 @@ export default function LiveTrackingSection() {
                                     </div>
 
                                     {/* Bottom Card */}
-                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1e1e1e] to-transparent pt-8 pb-3 px-3">
+                                    <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-[#1e1e1e] to-transparent pt-8 pb-3 px-3">
                                         <div className="bg-white/10 backdrop-blur rounded-xl p-3">
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center gap-2">

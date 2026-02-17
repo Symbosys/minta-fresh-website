@@ -18,7 +18,7 @@ export default function Marquee() {
     }, []);
 
     return (
-        <div className="w-full bg-[#8719C6] py-4 overflow-hidden flex whitespace-nowrap z-30 relative border-y border-white">
+        <div className="w-full bg-minta-primary py-4 overflow-hidden flex whitespace-nowrap z-30 relative border-y border-white">
             <div
                 ref={marqueeRef}
                 className="flex gap-12 text-4xl font-bold text-white uppercase items-center"

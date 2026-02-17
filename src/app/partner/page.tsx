@@ -179,7 +179,7 @@ export default function PartnerPage() {
                             {/* Right - Video Thumbnail */}
                             <div className="shrink-0 w-full md:w-56">
                                 <div className="relative bg-gray-100 rounded-lg overflow-hidden aspect-video md:aspect-4/3 flex items-center justify-center group cursor-pointer">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-minta-primary/20 to-minta-accent/20"></div>
+                                    <div className="absolute inset-0 bg-linear-to-br from-minta-primary/20 to-minta-accent/20"></div>
                                     <div className="relative z-10 text-center">
                                         <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform">
                                             <i className="ri-play-fill text-white text-xl"></i>
@@ -259,7 +259,7 @@ export default function PartnerPage() {
                         {/* Video Thumbnail - Mobile */}
                         <div className="mt-6">
                             <div className="relative bg-gray-100 rounded-lg overflow-hidden aspect-video flex items-center justify-center group cursor-pointer">
-                                <div className="absolute inset-0 bg-gradient-to-br from-minta-primary/20 to-minta-accent/20"></div>
+                                <div className="absolute inset-0 bg-linear-to-br from-minta-primary/20 to-minta-accent/20"></div>
                                 <div className="relative z-10 text-center">
                                     <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform">
                                         <i className="ri-play-fill text-white text-xl"></i>

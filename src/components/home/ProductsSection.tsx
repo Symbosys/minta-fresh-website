@@ -33,11 +33,11 @@ export default function ProductsSection() {
     return (
         <section
             id="about"
-            className="relative bg-[#fafafa] min-h-screen  overflow-hidden z-20"
+            className="relative bg-minta-bg min-h-screen  overflow-hidden z-20"
         >
             <div ref={containerRef} className="pin-container flex h-screen w-[300%]">
                 {/* Chicken Panel */}
-                <div className="panel w-screen h-full flex flex-col md:flex-row items-center justify-center relative px-8 bg-[#f9eae9] border-r border-white">
+                <div className="panel w-screen h-full flex flex-col md:flex-row items-center justify-center relative px-8 bg-minta-secondary border-r border-white">
                     <div className="md:w-1/2 z-10">
                         <h2
                             className="text-8xl md:text-9xl font-bold text-outline opacity-20 absolute top-10 left-0 -z-10"
@@ -46,19 +46,19 @@ export default function ProductsSection() {
                             POULTRY
                         </h2>
                         <h3
-                            className="text-5xl md:text-7xl font-bold mb-6 text-[#222222] leading-tight"
+                            className="text-5xl md:text-7xl font-bold mb-6 text-minta-text leading-tight"
                             style={{ fontFamily: "var(--font-syne), sans-serif" }}
                         >
-                            Tender <span className="text-[#8719C6]">Chicken</span>
+                            Tender <span className="text-minta-primary">Chicken</span>
                         </h3>
-                        <p className="text-[#4a4a4a] text-xl max-w-md mb-8">
+                        <p className="text-minta-text-sec text-xl max-w-md mb-8">
                             Antibiotic-free, hormone-free, and ethically raised.
                         </p>
                         <div className="flex gap-4">
-                            <span className="px-4 py-2 border border-[#222222]/20 rounded-full text-xs uppercase text-[#222222]">
+                            <span className="px-4 py-2 border border-minta-text/20 rounded-full text-xs uppercase text-minta-text">
                                 Curry Cut
                             </span>
-                            <span className="px-4 py-2 border border-[#222222]/20 rounded-full text-xs uppercase text-[#222222]">
+                            <span className="px-4 py-2 border border-minta-text/20 rounded-full text-xs uppercase text-minta-text">
                                 Breast
                             </span>
                         </div>
@@ -69,7 +69,7 @@ export default function ProductsSection() {
                             alt="Fresh Chicken"
                             width={500}
                             height={400}
-                            className="rounded-2xl object-cover w-[80%] h-[60%] rotate-3 hover:rotate-0 transition-all duration-700 shadow-2xl shadow-[#8719C6]/20 clip-image cursor-hover"
+                            className="rounded-2xl object-cover w-[80%] h-[60%] rotate-3 hover:rotate-0 transition-all duration-700 shadow-2xl shadow-minta-primary/20 clip-image cursor-hover"
                         />
                     </div>
                 </div>
@@ -84,19 +84,19 @@ export default function ProductsSection() {
                             SEAFOOD
                         </h2>
                         <h3
-                            className="text-5xl md:text-7xl font-bold mb-6 text-[#222222] leading-tight"
+                            className="text-5xl md:text-7xl font-bold mb-6 text-minta-text leading-tight"
                             style={{ fontFamily: "var(--font-syne), sans-serif" }}
                         >
-                            Fresh <span className="text-[#8719C6]">Catch</span>
+                            Fresh <span className="text-minta-primary">Catch</span>
                         </h3>
-                        <p className="text-[#4a4a4a] text-xl max-w-md mb-8">
+                        <p className="text-minta-text-sec text-xl max-w-md mb-8">
                             Straight To Delivery. Rohu, Catla, Prawns.
                         </p>
                         <div className="flex gap-4">
-                            <span className="px-4 py-2 border border-[#222222]/20 rounded-full text-xs uppercase text-[#222222]">
+                            <span className="px-4 py-2 border border-minta-text/20 rounded-full text-xs uppercase text-minta-text">
                                 River Fish
                             </span>
-                            <span className="px-4 py-2 border border-[#222222]/20 rounded-full text-xs uppercase text-[#222222]">
+                            <span className="px-4 py-2 border border-minta-text/20 rounded-full text-xs uppercase text-minta-text">
                                 Sea Fish
                             </span>
                         </div>
@@ -107,13 +107,13 @@ export default function ProductsSection() {
                             alt="Fresh Fish"
                             width={500}
                             height={400}
-                            className="rounded-2xl object-cover w-[80%] h-[60%] -rotate-3 hover:rotate-0 transition-all duration-700 shadow-2xl shadow-[#ff9fa3]/20 clip-image cursor-hover"
+                            className="rounded-2xl object-cover w-[80%] h-[60%] -rotate-3 hover:rotate-0 transition-all duration-700 shadow-2xl shadow-minta-highlight/20 clip-image cursor-hover"
                         />
                     </div>
                 </div>
 
                 {/* Meat Panel */}
-                <div className="panel w-screen h-full flex flex-col md:flex-row items-center justify-center relative px-8 bg-[#f9eae9]">
+                <div className="panel w-screen h-full flex flex-col md:flex-row items-center justify-center relative px-8 bg-minta-secondary">
                     <div className="md:w-1/2 z-10">
                         <h2
                             className="text-8xl md:text-9xl font-bold text-outline opacity-20 absolute top-20 left-20 -z-10"
@@ -122,19 +122,19 @@ export default function ProductsSection() {
                             RED MEAT
                         </h2>
                         <h3
-                            className="text-5xl md:text-7xl font-bold mb-6 text-[#222222] leading-tight"
+                            className="text-5xl md:text-7xl font-bold mb-6 text-minta-text leading-tight"
                             style={{ fontFamily: "var(--font-syne), sans-serif" }}
                         >
-                            Premium <span className="text-[#8719C6]">Mutton</span>
+                            Premium <span className="text-minta-primary">Mutton</span>
                         </h3>
-                        <p className="text-[#4a4a4a] text-xl max-w-md mb-8">
+                        <p className="text-minta-text-sec text-xl max-w-md mb-8">
                             Tender Goat Meat, rich in flavor. Expertly cut.
                         </p>
                         <div className="flex gap-4">
-                            <span className="px-4 py-2 border border-[#222222]/20 rounded-full text-xs uppercase text-[#222222]">
+                            <span className="px-4 py-2 border border-minta-text/20 rounded-full text-xs uppercase text-minta-text">
                                 Biryani Cut
                             </span>
-                            <span className="px-4 py-2 border border-[#222222]/20 rounded-full text-xs uppercase text-[#222222]">
+                            <span className="px-4 py-2 border border-minta-text/20 rounded-full text-xs uppercase text-minta-text">
                                 Chops
                             </span>
                         </div>
@@ -145,7 +145,7 @@ export default function ProductsSection() {
                             alt="Fresh Mutton"
                             width={500}
                             height={400}
-                            className="rounded-2xl object-cover w-[80%] h-[60%] rotate-6 hover:rotate-0 transition-all duration-700 shadow-2xl shadow-[#8719C6]/20 clip-image cursor-hover"
+                            className="rounded-2xl object-cover w-[80%] h-[60%] rotate-6 hover:rotate-0 transition-all duration-700 shadow-2xl shadow-minta-primary/20 clip-image cursor-hover"
                         />
                     </div>
                 </div>

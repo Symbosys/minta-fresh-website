@@ -1,16 +1,15 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
+import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
+import Navbar from "@/components/Navbar";
+import DownloadSection from "@/components/home/DownloadSection";
+import EliteSection from "@/components/home/EliteSection";
 import HeroSection from "@/components/home/HeroSection";
+import LiveTrackingSection from "@/components/home/LiveTrackingSection";
 import Marquee from "@/components/home/Marquee";
 import ProductsSection from "@/components/home/ProductsSection";
-import EliteSection from "@/components/home/EliteSection";
-import DownloadSection from "@/components/home/DownloadSection";
-import VendorSection from "@/components/home/VendorSection";
-import LiveTrackingSection from "@/components/home/LiveTrackingSection";
 
 export default function Home() {
   return (
