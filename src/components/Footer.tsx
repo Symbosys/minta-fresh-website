@@ -33,6 +33,20 @@ export default function Footer() {
                         Privacy Policy
                     </Link>
                     <Link
+                        href="/Business-&-Payment"
+                        className="hover:text-minta-primary transition-colors block sm:inline-block"
+                    >
+                        {/* Bussiness & Payment Compliance Declaration */}
+                        Bussiness & Payment
+                    </Link>
+                    <Link
+                        href="/partner-vendor-terms-&-condition"
+                        className="hover:text-minta-primary transition-colors block sm:inline-block"
+                    >
+                        {/* Partner & Vendor Terms & Conditions */}
+                        Partner & Vendor
+                    </Link>
+                    <Link
                         href="/corporate"
                         className="hover:text-minta-primary transition-colors block sm:inline-block"
                     >

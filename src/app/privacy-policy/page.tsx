@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
                         Privacy Policy
                     </h1>
                     <p className="text-[#4a4a4a] text-lg max-w-2xl mx-auto">
-                        Your privacy is critically important to us. This policy outlines how we collect, use, and protect your personal information while you use our platform.
+                        Minta Club Private Limited (Brand: Minta Fresh)
                     </p>
                 </div>
             </header>
@@ -38,111 +38,154 @@ export default function PrivacyPolicyPage() {
                 >
                     <div className="prose max-w-none">
                         <p className="text-sm text-[#4a4a4a]/60 uppercase tracking-widest mb-8">
-                            Last Updated: November 2024
+                            Last Updated: 5/2/2026
                         </p>
 
                         <p>
-                            This privacy policy sets out how <strong>mintaclub.com</strong> uses and protects any information that you give mintaclub.com when you use this website. mintaclub.com is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.
+                            Minta Club Private Limited (“Company”, “we”, “our”, or “us”) operates the brand <strong>Minta Fresh</strong>, an online platform that enables customers to order raw chicken, fish, and goat meat for home delivery (“Services”).
                         </p>
                         <p>
-                            mintaclub.com may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes.
+                            We are committed to protecting your privacy and ensuring transparency in how your personal data is collected, used, stored, and shared in compliance with applicable Indian laws and Google Play policies.
                         </p>
 
-                        <h2>Consent & terms of this Privacy Policy</h2>
-                        <p>
-                            By using our platform (website, application or services), you have voluntarily agreed to consent & abide with this privacy policy. You have the option to disagree to abide by our privacy policy; if you choose disagree, you will not be able to access any portion of our platform or gain access to services provided on this platform.
-                        </p>
+                        <h2>1. Scope of This Policy</h2>
+                        <p>This Privacy Policy applies to:</p>
+                        <ul>
+                            <li>The Minta Fresh mobile application</li>
+                            <li>Our website and related services</li>
+                            <li>Customers, delivery partners, and business partners</li>
+                        </ul>
+                        <p>By using our Services, you agree to the collection and use of information in accordance with this Policy.</p>
 
-                        <h2>What we collect</h2>
-                        <p>We may collect the following information:</p>
+                        <h2>2. Information We Collect</h2>
+                        <h3>2.1 Personal Information</h3>
+                        <p>We may collect:</p>
                         <ul>
                             <li>Name</li>
-                            <li>Contact information including email address</li>
-                            <li>Demographic information such as postcode, preferences and interests</li>
-                            <li>Other information relevant to customer surveys and/or offers</li>
+                            <li>Mobile number</li>
+                            <li>Email address</li>
+                            <li>Delivery address</li>
+                            <li>Order details (products, quantity, price)</li>
                         </ul>
-                        <p>For the exhaustive list of cookies we collect see the List of cookies we collect section.</p>
 
-                        <h2>What we do with the information we gather</h2>
-                        <p>We require this information to understand your needs and provide you with a better service, and in particular for the following reasons:</p>
+                        <h3>2.2 Payment Information</h3>
+                        <p>We <strong>do not store</strong> credit/debit card details, UPI IDs, or net banking credentials. All customer payments are processed through a <strong>third-party payment gateway</strong>.</p>
+
+                        <h3>2.3 Device & Usage Information</h3>
                         <ul>
-                            <li>Internal record keeping.</li>
-                            <li>We may use the information to improve our products and services.</li>
-                            <li>We may periodically send promotional emails about new products, special offers or other information which we think you may find interesting using the email address which you have provided.</li>
-                            <li>From time to time, we may also use your information to contact you for market research purposes. We may contact you by email, phone, fax or mail. We may use the information to customise the website according to your interests.</li>
-                            <li>Without identifying you personally we may use your information to provide updates on our service offerings and promotional schemes through third party advertising partners (&apos;TPAP&apos;). Our TPAP may use cookies on our website as well as third party websites and social media platforms to understand customer interests to provide updates on our latest service offerings and promotional schemes that are akin to your interests. Our TPAP provide you with complete control over ads experience and you can remove ads shown to you.</li>
+                            <li>Device type</li>
+                            <li>Operating system</li>
+                            <li>App version</li>
+                            <li>IP address (for security and fraud prevention)</li>
+                            <li>Crash logs and performance data</li>
                         </ul>
 
-                        <h2>Security</h2>
+                        <h2>3. Payment Gateway Disclosure</h2>
                         <p>
-                            We are committed to ensuring that your information is secure. In order to prevent unauthorised access or disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online.
+                            Payments for food orders placed on Minta Fresh are processed securely through <strong>PhonePe</strong>, a PCI-DSS compliant third-party payment gateway.
                         </p>
-
-                        <h2>How we use cookies</h2>
-                        <p>
-                            A cookie is a small file which asks permission to be placed on your computer&apos;s hard drive. Once you agree, the file is added and the cookie helps analyse web traffic or lets you know when you visit a particular site. Cookies allow web applications to respond to you as an individual. The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences.
-                        </p>
-                        <p>
-                            We use traffic log cookies to identify which pages are being used. This helps us analyse data about web page traffic and improve our website in order to tailor it to customer needs. We only use this information for statistical analysis purposes and then the data is removed from the system.
-                        </p>
-                        <p>
-                            Overall, cookies help us provide you with a better website, by enabling us to monitor which pages you find useful and which you do not. A cookie in no way gives us access to your computer or any information about you, other than the data you choose to share with us. You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. This may prevent you from taking full advantage of the website.
-                        </p>
-
-                        <h2>Links to other websites</h2>
-                        <p>
-                            Our website may contain links to other websites of interest. However, once you have used these links to leave our site, you should note that we do not have any control over that other website. Therefore, we cannot be responsible for the protection and privacy of any information which you provide whilst visiting such sites and such sites are not governed by this privacy statement. You should exercise caution and look at the privacy statement applicable to the website in question.
-                        </p>
-
-                        <h2>Controlling your personal information</h2>
-                        <p>You may choose to restrict the collection or use of your personal information in the following ways:</p>
                         <ul>
-                            <li>Whenever you are asked to fill in a form on the website, look for the box that you can click to indicate that you do not want the information to be used by anybody for direct marketing purposes.</li>
-                            <li>If you have previously agreed to us using your personal information for direct marketing purposes, you may change your mind at any time by writing to or emailing us at <a href="mailto:customercare@mintaclub.com" className="text-[#8719C6] underline">customercare@mintaclub.com</a>.</li>
+                            <li>Minta Fresh does not hold, store, or control customer payment instruments</li>
+                            <li>Payment data is handled directly by the payment gateway as per their privacy and security standards</li>
+                            <li>Payments are accepted only for the purchase of food and delivery services</li>
                         </ul>
-                        <p>
-                            We will not sell, distribute or lease your personal information to third parties unless we have your permission or are required by law to do so. We may use your personal information to send you promotional information about third parties which we think you may find interesting if you tell us that you wish this to happen.
-                        </p>
-                        <p>
-                            You may request details of personal information which we hold about you under the Data Protection Act 1998. A small fee will be payable. If you would like a copy of the information held on you please write to us at <a href="mailto:customercare@mintaclub.com" className="text-[#8719C6] underline">customercare@mintaclub.com</a>.
-                        </p>
-                        <p>
-                            If you believe that any information we are holding on you is incorrect or incomplete, please write to or email us as soon as possible, at the above address. We will promptly correct any information found to be incorrect.
-                        </p>
 
-                        <h2>How can a user opt not to disclose information with FTH?</h2>
-                        <p>
-                            You have the option of not disclosing Your Sensitive Personal Data or Information to Us. You can also ask us to remove your data from our database by sending a mail to us at <a href="mailto:customercare@mintaclub.com" className="text-[#8719C6] underline">customercare@mintaclub.com</a>. In the event that You choose not to disclose Sensitive Personal Information, you may not be able to access multiple areas of the Platform or avail our e-commerce facility / services provided on the Platform.
-                        </p>
+                        <h2>4. Wallet & Refund Clarification</h2>
+                        <p>Any wallet or balance shown within the app (if applicable) is:</p>
+                        <ul>
+                            <li>A closed-system adjustment ledger</li>
+                            <li>Used only for refunds, order adjustments, or promotional credits</li>
+                            <li>Not withdrawable</li>
+                            <li>Not transferable</li>
+                            <li>Not a stored-value or financial product</li>
+                        </ul>
 
-                        <h2>Marketing & promotional activity</h2>
+                        <h2>5. Payout Processor Disclosure (Partners & Vendors)</h2>
                         <p>
-                            FTH (Fault Tolerant Heap) may use your information to provide you with better platform user-experience, send information on products and services which may be of interest to you, send via Short Messaging Services (SMS) marketing promotions, and share such personal information to our business partners on a need-to-know basis to render effective services for better customer experience.
+                            Settlements to partner vendors and delivery partners are processed through <strong>Razor pay / unpay Api Payouts</strong> (or bank transfer mechanisms provided by regulated payment service providers).
                         </p>
+                        <ul>
+                            <li>Payouts represent service fees payable for completed deliveries or fulfilled orders</li>
+                            <li>The Company does not offer any interest, investment, or earning schemes</li>
+                            <li>Payouts are backend operational settlements and not a user-facing financial service</li>
+                            <li>The app includes payment functionality for food orders only. Any wallet shown is used solely for internal order adjustments or refunds and is not withdrawable.</li>
+                            <li>Payouts to partners are backend operational settlements and are not user-facing features.</li>
+                        </ul>
 
-                        <h2>What is NDNC Policy?</h2>
-                        <p>
-                            By using the Platform, you hereby authorize Us to contact You via email, phone, or SMS (Short Message Service), other applications (android or apple) linked to phone number on the contact details so provided, to furnish You with information about Our Products, Services, product delivery, marketing promotions, & other allied services offered by FTH on its platform. This authorization is licit for the mentioned purposes irrespective of whether You are registered with the NDNC (National Do Not Call) registry.
-                        </p>
+                        <h2>6. How We Use Information</h2>
+                        <p>We use collected information to:</p>
+                        <ul>
+                            <li>Process and deliver food orders</li>
+                            <li>Facilitate payments and refunds</li>
+                            <li>Settle partner payouts</li>
+                            <li>Provide customer support</li>
+                            <li>Improve app performance and user experience</li>
+                            <li>Comply with legal and regulatory obligations</li>
+                        </ul>
 
-                        <h2>Indemnity</h2>
-                        <p>
-                            You agree to indemnify and hold FTH harmless from: (i) any actions, claims, demands, suits, damages, losses, penalties, interest and other charges and expenses (including legal fees and other dispute resolution costs) made by any third party due to or arising out of any violation of the terms of this Policy; (ii) any acts or deeds, including for any non-compliance or violation, of any applicable law, rules, regulations on Your part; or (iii) for violations committed by You.
-                        </p>
+                        <h2>7. Data Sharing & Disclosure (Limited)</h2>
+                        <p>We share user data <strong>only on a need-to-know basis</strong>, strictly limited to:</p>
 
-                        <h2>Governing Law & Severability</h2>
-                        <p>
-                            The invalidity or unenforceability of any part of this Policy shall not prejudice or affect the validity or enforceability of the remainder of this Policy. This Policy has been prepared under the provisions of the Indian Information Technology Act, 2000 (&quot;IT Act&quot;) and its corresponding rules as enshrined under the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 (&quot;IT Rules&quot;) to monitor information (including sensitive personal data or information) collected, received, possessed, stored, dealt with, or handled by FTH.
-                        </p>
+                        <h3>7.1 Payment & Payout Partners</h3>
+                        <ul>
+                            <li>Order amount</li>
+                            <li>Transaction reference</li>
+                            <li>Contact details (where required for payment processing)</li>
+                        </ul>
 
-                        <h2>Grievances</h2>
-                        <p>
-                            Should you have any grievances about the processing of your personal information or the privacy policy, you may contact:
-                        </p>
-                        <div className="bg-[#f9eae9]/50 p-6 rounded-lg border border-[#f9eae9] mt-4">
+                        <h3>7.2 Delivery Partners</h3>
+                        <ul>
+                            <li>Customer name</li>
+                            <li>Delivery address</li>
+                            <li>Contact number (only for order fulfilment)</li>
+                        </ul>
+
+                        <h3>7.3 Google Play Services</h3>
+                        <p>Limited technical and usage data may be shared with Google Play Console, including:</p>
+                        <ul>
+                            <li>App performance metrics</li>
+                            <li>Crash reports</li>
+                            <li>Device and OS information</li>
+                        </ul>
+                        <p>This data is used <strong>solely for app stability, security, and policy compliance</strong>.</p>
+
+                        <h2>8. What We Do NOT Do</h2>
+                        <p>To avoid any ambiguity:</p>
+                        <ul>
+                            <li>❌ We do not offer financial services</li>
+                            <li>❌ We do not provide gambling, betting, or gaming features</li>
+                            <li>❌ We do not offer earning, investment, or reward-based monetary programs</li>
+                            <li>❌ We do not sell personal data to third parties</li>
+                        </ul>
+
+                        <h2>9. Data Retention & Security</h2>
+                        <ul>
+                            <li>Data is retained only as long as necessary to provide services or comply with legal requirements</li>
+                            <li>We implement reasonable technical and organizational safeguards to protect user data</li>
+                            <li>Access to data is restricted to authorized personnel only</li>
+                        </ul>
+
+                        <h2>10. User Rights</h2>
+                        <p>Users may:</p>
+                        <ul>
+                            <li>Request access to their personal data</li>
+                            <li>Request correction or deletion (subject to legal obligations)</li>
+                            <li>Withdraw consent for non-essential communications</li>
+                        </ul>
+                        <p>Requests can be sent to the contact details below.</p>
+
+                        <h2>11. Children’s Privacy</h2>
+                        <p>Our Services are not intended for individuals under the age of 18. We do not knowingly collect personal data from minors.</p>
+
+                        <h2>12. Changes to This Policy</h2>
+                        <p>We may update this Privacy Policy from time to time. Updates will be posted within the app or on our website with a revised “Last Updated” date.</p>
+
+                        <h2>13. Contact Information</h2>
+                        <div className="bg-[#f9eae9]/50 p-6 rounded-lg border border-[#f9eae9] mt-4 text-[#222222]">
                             <p className="font-bold text-[#8719C6] text-lg mb-1">Minta Club Private Limited</p>
-                            <p>HI-76, Harmu Colony, Ranchi - 834002</p>
-                            <p className="mt-2">Email: <a href="mailto:info@mintaclub.com" className="text-[#8719C6] underline">info@mintaclub.com</a></p>
+                            <p>Brand: Minta Fresh</p>
+                            <p>Email: <a href="mailto:support@mintafresh.com" className="text-[#8719C6] underline">support@mintafresh.com</a></p>
+                            <p className="mt-2"><strong>Registered Office:</strong> Road No.- 1B Basant Vihar, Harmu Housing Colony, Ranchi- 834002, Jharkhand</p>
                         </div>
                     </div>
                 </div>

@@ -77,7 +77,7 @@ export default function ContactUsPage() {
                                 href="mailto:mintaafresh@gmail.com"
                                 className="text-xl font-bold text-[#8719C6] hover:text-[#b58ff0] transition-colors border-b-2 border-[#f9eae9] hover:border-[#8719C6] pb-1"
                             >
-                                mintaafresh@gmail.com
+                                support@mintafresh.com
                             </a>
                         </div>
                     </div>

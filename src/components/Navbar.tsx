@@ -62,6 +62,12 @@ export default function Navbar() {
 
                 {/* Desktop Right Side */}
                 <div className="hidden md:flex items-center gap-4">
+                    <Link
+                        href="/about-us"
+                        className="text-sm uppercase tracking-widest font-medium hover:text-minta-primary transition-colors"
+                    >
+                        About Us
+                    </Link>
                     {isPartnerPage ? (
                         <a
                             target="_blank"
@@ -138,6 +144,14 @@ export default function Navbar() {
                                 </a>
                             </>
                         )}
+
+                        <Link
+                            href="/about-us"
+                            onClick={closeMenu}
+                            className="py-4 text-white/80 hover:text-minta-primary transition-colors uppercase tracking-widest text-sm font-medium border-b border-white/10"
+                        >
+                            About Us
+                        </Link>
 
                         {isPartnerPage ? (
                             <a

@@ -37,23 +37,61 @@ export default function RefundPolicyPage() {
                     style={{ animationDelay: "0.2s" }}
                 >
                     <div className="prose max-w-none">
-                        <h2>Online Payment</h2>
-                        <p>
-                            Refunds will be processed within 48 hours and will be credited to the customer account within 5-7 working days depending on the issuing bank.
+                        <p className="text-sm text-[#4a4a4a]/60 uppercase tracking-widest mb-8">
+                            Last Updated: 05/02/2026
                         </p>
 
-                        <h2>Cash on Delivery</h2>
-                        <p>
-                            Refunds will be credited to the customer&apos;s account as store credit or wallet and can be used for the subsequent order in the future.
-                        </p>
+                        <h2>1. About Minta Fresh</h2>
+                        <p>Minta Fresh, operated by Minta Club Private Limited, is an online platform for ordering and doorstep delivery of raw chicken, fish, and goat meat.</p>
+                        <p>All products are raw, perishable food items and are prepared, packed, and delivered as per order specifications.</p>
 
-                        <h2>Grievances</h2>
-                        <p>Details of the Grievance contact is given below;</p>
+                        <h2>2. Eligibility for Refunds</h2>
+                        <p>Due to the perishable nature of raw meat and seafood, refunds are issued only in the following cases:</p>
+                        <ul>
+                            <li>Incorrect item delivered</li>
+                            <li>Missing item in the order</li>
+                            <li>Quality issues reported at the time of delivery (e.g., spoiled, damaged, or unusable product)</li>
+                            <li>Order cancelled by Minta Fresh due to operational constraints</li>
+                        </ul>
+                        <p>Refund requests must be raised within the delivery time window or immediately upon delivery, along with supporting details such as photos or order information.</p>
+
+                        <h2>3. Non-Refundable Cases</h2>
+                        <p>Refunds will not be issued in the following situations:</p>
+                        <ul>
+                            <li>Change of mind after delivery</li>
+                            <li>Delays caused by incorrect address or unavailability of the customer</li>
+                            <li>Issues reported after consumption or use of the product</li>
+                            <li>Requests made beyond the allowed complaint reporting window</li>
+                        </ul>
+
+                        <h2>4. Refund Method (Clear Disclosure)</h2>
+                        <p>Refunds are issued to the original payment method or to an in-app adjustment wallet, as applicable.</p>
+                        <ul>
+                            <li>The adjustment wallet is a closed-system ledger usable only within the Minta Fresh platform.</li>
+                            <li>Wallet balance cannot be withdrawn as cash, transferred to other users, or used outside the app.</li>
+                            <li>No interest, earnings, or monetary rewards are provided on wallet balances.</li>
+                        </ul>
+                        <p>This refund mechanism is implemented in compliance with Google Play Console payment and policy requirements.</p>
+
+                        <h2>5. Refund Processing Timeline</h2>
+                        <ul>
+                            <li>Approved refunds are processed within 5–7 business days</li>
+                            <li>Actual credit timelines may vary depending on the customer’s bank or payment service provider</li>
+                        </ul>
+
+                        <h2>6. Payment Processing Disclaimer</h2>
+                        <p>All payments on Minta Fresh are processed through third-party payment gateways.</p>
+                        <p>Minta Club Private Limited does not store customer card, UPI, or banking information on its servers. The app includes payment functionality for food orders only. Any wallet shown is used solely for internal order adjustments or refunds and is not withdrawable. Payouts to partners are backend operational settlements and are not user-facing features.</p>
+
+                        <h2>7. Contact &amp; Support</h2>
+                        <p>For refund-related queries, customers can contact:</p>
                         <div className="bg-[#f9eae9]/50 p-6 rounded-lg border border-[#f9eae9] mt-4">
-                            <p className="font-bold text-[#8719C6] text-lg mb-1">Minta Club Private Limited</p>
-                            <p>HI-76, Harmu Colony, Ranchi - 834002</p>
-                            <p className="mt-2">Email: <a href="mailto:info@mintaclub.com" className="text-[#8719C6] underline">info@mintaclub.com</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:support@mintafresh.in" className="text-[#8719C6] underline">support@mintafresh.in</a></p>
+                            <p><strong>📞 Customer Support:</strong> <a href="tel:6205618814" className="text-[#8719C6] underline">6205618814</a></p>
                         </div>
+
+                        <h2>8. Policy Updates</h2>
+                        <p>Minta Club Private Limited reserves the right to update or modify this Refund Policy at any time to comply with operational, legal, or platform requirements. Updates will be reflected within the app or on the official website.</p>
                     </div>
                 </div>
             </main>
