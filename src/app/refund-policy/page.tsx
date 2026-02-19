@@ -87,7 +87,7 @@ export default function RefundPolicyPage() {
                         <p>For refund-related queries, customers can contact:</p>
                         <div className="bg-[#f9eae9]/50 p-6 rounded-lg border border-[#f9eae9] mt-4">
                             <p><strong>Email:</strong> <a href="mailto:support@mintafresh.in" className="text-[#8719C6] underline">support@mintafresh.in</a></p>
-                            <p><strong>📞 Customer Support:</strong> <a href="tel:6205618814" className="text-[#8719C6] underline">6205618814</a></p>
+                            <p className="mt-2"><strong>Registered Office:</strong>Ranchi, Jharkhand</p>
                         </div>
 
                         <h2>8. Policy Updates</h2>

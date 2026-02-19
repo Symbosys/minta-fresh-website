@@ -138,7 +138,8 @@ export default function PartnerVendorTermsPage() {
 
                         <h2>13. Contact Information</h2>
                         <p>Email: <a href="mailto:support@mintafresh.com" className="text-[#8719C6] underline">support@mintafresh.com</a></p>
-                        <p>Support: <a href="tel:6205618814" className="text-[#8719C6] underline">6205618814</a></p>
+                        <p className="mt-2"><strong>Registered Office:</strong>Ranchi, Jharkhand</p>
+
                     </div>
                 </div>
             </main>

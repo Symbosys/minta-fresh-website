@@ -252,7 +252,7 @@ export default function TermsAndConditionsPage() {
                         <p>Minta Club Private Limited</p>
                         <p>Brand: Minta Fresh</p>
                         <p>Email: <a href="mailto:support@mintafresh.com" className="text-minta-primary underline">support@mintafresh.com</a></p>
-                        <p>Address: Road No.- 1B Basant Vihar, Harmu Housing Colony, Ranchi- 834002, Jharkhand</p>
+                        <p>Address: Ranchi, Jharkhand</p>
                     </div>
                 </div>
             </main>

@@ -185,7 +185,7 @@ export default function PrivacyPolicyPage() {
                             <p className="font-bold text-[#8719C6] text-lg mb-1">Minta Club Private Limited</p>
                             <p>Brand: Minta Fresh</p>
                             <p>Email: <a href="mailto:support@mintafresh.com" className="text-[#8719C6] underline">support@mintafresh.com</a></p>
-                            <p className="mt-2"><strong>Registered Office:</strong> Road No.- 1B Basant Vihar, Harmu Housing Colony, Ranchi- 834002, Jharkhand</p>
+                            <p className="mt-2"><strong>Registered Office:</strong>Ranchi, Jharkhand</p>
                         </div>
                     </div>
                 </div>
