@@ -38,7 +38,7 @@ export default function TermsAndConditionsPage() {
                 >
                     <div className="prose max-w-none">
                         <p className="text-sm text-minta-text-sec/60 uppercase tracking-widest mb-8">
-                            Last Updated: 50/02/2026
+                            Last Updated: 05/02/2026
                         </p>
 
                         <h2>1. About Us</h2>

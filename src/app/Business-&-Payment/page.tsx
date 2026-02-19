@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 
 export default function BusinessAndPaymentCompliancePage() {
     return (
-        <div className="min-h-screen bg-[#fafafa]">
+        <div className="min-h-screen bg-minta-bg">
             <Navbar />
 
             {/* Header */}
-            <header className="pt-24 pb-12 px-6 bg-[#f9eae9]">
+            <header className="pt-24 pb-12 px-6 bg-minta-secondary">
                 <div className="container mx-auto max-w-4xl text-center fade-in">
                     <span className="text-[#8719C6] text-xs font-bold tracking-[0.2em] uppercase mb-4 block">
                         Legal Documentation
@@ -24,7 +24,7 @@ export default function BusinessAndPaymentCompliancePage() {
                     >
                         Business &amp; Payment Compliance Declaration
                     </h1>
-                    <p className="text-[#4a4a4a] text-lg max-w-2xl mx-auto">
+                    <p className="text-minta-text-sec text-lg max-w-2xl mx-auto">
                         Official declaration on our business model, payment practices, and regulatory compliance.
                     </p>
                 </div>
@@ -37,7 +37,7 @@ export default function BusinessAndPaymentCompliancePage() {
                     style={{ animationDelay: "0.2s" }}
                 >
                     <div className="prose max-w-none">
-                        <p className="text-sm text-[#4a4a4a]/60 uppercase tracking-widest mb-8">
+                        <p className="text-sm text-minta-text-sec/60 uppercase tracking-widest mb-8">
                             Last Updated: 05/02/2026
                         </p>
 
