@@ -56,7 +56,6 @@ export default function PartnerPage() {
                         {/* Commission Badge */}
                         <div className="inline-flex items-center gap-2 bg-[#ffd54f] text-black px-4 py-2 rounded-full mb-2">
                             <span className="text-lg">🎉</span>
-                            <span className="font-semibold text-sm">0% commission for 1st month!</span>
                         </div>
 
                         <p className="text-white/60 text-sm mb-6">
