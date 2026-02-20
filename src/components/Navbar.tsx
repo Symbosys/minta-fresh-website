@@ -52,7 +52,7 @@ export default function Navbar() {
                             Elite
                         </a>
                         <a
-                            href="#download"
+                            href="/download"
                             className="hover:text-minta-primary transition-colors cursor-pointer"
                         >
                             Get App
@@ -85,7 +85,7 @@ export default function Navbar() {
                         </Link>
                     )}
                     <Link
-                        href="/#download"
+                        href="/download"
                         className="border border-white/20 px-6 py-2 rounded-full text-xs uppercase tracking-widest hover:bg-minta-primary hover:text-white hover:border-transparent transition-all duration-300"
                     >
                         Download App
@@ -136,7 +136,7 @@ export default function Navbar() {
                                     Elite
                                 </a>
                                 <a
-                                    href="#download"
+                                    href="/download"
                                     onClick={closeMenu}
                                     className="py-4 text-white/80 hover:text-minta-primary transition-colors uppercase tracking-widest text-sm font-medium border-b border-white/10"
                                 >
@@ -183,7 +183,7 @@ export default function Navbar() {
                     {/* Mobile CTA Button */}
                     <div className="mt-8">
                         <Link
-                            href="/#download"
+                            href="/download"
                             onClick={closeMenu}
                             className="block w-full text-center bg-minta-primary text-white py-3 rounded-full text-sm uppercase tracking-widest font-medium hover:bg-[#6d14a0] transition-colors"
                         >
