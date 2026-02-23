@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: "Minta Fresh | Raw. Real. Delivered.",
   description: "Premium fresh meat and seafood delivered to your doorstep. Antibiotic-free, hormone-free, and ethically raised chicken, fish, and mutton.",
   keywords: "fresh meat, chicken, fish, seafood, mutton, delivery, Ranchi, India",
+  icons: {
+    icon: '/assets/logo/minta-logo.jpeg'
+  },
 };
 
 export default function RootLayout({
@@ -28,6 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/assets/logo/minta-logo.jpeg" />
+      </head>
       <body className={`${inter.variable} ${syne.variable} antialiased`}>
         {children}
       </body>
