@@ -19,12 +19,12 @@ export default function EliteSection() {
     return (
         <section
             id="elite"
-            className="relative py-24 md:py-32 bg-gradient-to-b from-white to-[#fafafa]"
+            className="relative py-24 md:py-32 bg-linear-to-b from-white to-minta-bg"
         >
             {/* Subtle Background Elements */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#8719C6]/5 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#8719C6]/3 rounded-full blur-3xl"></div>
+                <div className="absolute top-0 left-1/4 w-96 h-96 bg-minta-primary/5 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-minta-primary/3 rounded-full blur-3xl"></div>
             </div>
 
             <div className="container mx-auto px-6 relative z-10">
@@ -44,17 +44,17 @@ export default function EliteSection() {
                     {benefits.map((benefit, index) => (
                         <div
                             key={index}
-                            className="group relative bg-white rounded-3xl p-8 pt-14 pb-10 md:p-10 md:pt-16 md:pb-12 border border-gray-100 hover:border-[#8719C6]/30 hover:shadow-xl hover:shadow-[#8719C6]/5 transition-all duration-500"
+                            className="group relative bg-white rounded-3xl p-8 pt-14 pb-10 md:p-10 md:pt-16 md:pb-12 border border-gray-100 hover:border-minta-primary/30 hover:shadow-xl hover:shadow-minta-primary/5 transition-all duration-500"
                         >
                             {/* Highlight Badge */}
                             <div className="absolute top-6 right-6">
-                                <span className="px-3 py-1 bg-[#8719C6]/10 text-[#8719C6] text-xs font-bold rounded-full">
+                                <span className="px-3 py-1 bg-minta-primary/10 text-minta-primary text-xs font-bold rounded-full">
                                     {benefit.highlight}
                                 </span>
                             </div>
 
                             {/* Icon */}
-                            <div className="w-16 h-16 bg-gradient-to-br from-[#8719C6] to-[#a855f7] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <div className="w-16 h-16 bg-linear-to-br from-minta-primary to-[#a855f7] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <i className={`${benefit.icon} text-2xl text-white`}></i>
                             </div>
 
@@ -77,7 +77,7 @@ export default function EliteSection() {
                 <div className="text-center">
                     <div className="inline-flex flex-col sm:flex-row items-center gap-4">
                         <button
-                            className="px-10 py-4 bg-[#8719C6] text-white font-bold uppercase tracking-wider rounded-full hover:bg-[#6d14a0] hover:shadow-lg hover:shadow-[#8719C6]/30 transition-all duration-300"
+                            className="px-10 py-4 bg-minta-primary text-white font-bold uppercase tracking-wider rounded-full hover:bg-[#6d14a0] hover:shadow-lg hover:shadow-minta-primary/30 transition-all duration-300"
                             style={{ fontFamily: "var(--font-syne), sans-serif" }}
                         >
                             Download App
