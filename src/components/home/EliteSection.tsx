@@ -14,12 +14,6 @@ export default function EliteSection() {
             description: "Get your orders delivered in 30 - 35 minutes with free shipping on all orders.",
             highlight: "FREE",
         },
-        {
-            icon: "ri-discount-percent-fill",
-            title: "Exclusive Savings",
-            description: "Enjoy automatic discounts and special offers reserved only for Elite members.",
-            highlight: "elite",
-        },
     ];
 
     return (
@@ -36,27 +30,17 @@ export default function EliteSection() {
             <div className="container mx-auto px-6 relative z-10">
                 {/* Header Section */}
                 <div className="text-center mb-16 md:mb-20">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#8719C6]/10 border border-[#8719C6]/20 rounded-full mb-6">
-                        <i className="ri-sparkling-fill text-[#8719C6]"></i>
-                        <span className="text-[#8719C6] text-sm font-semibold tracking-wide uppercase">
-                            Elite Membership
-                        </span>
-                    </div>
 
                     <h2
                         className="text-4xl md:text-6xl lg:text-7xl font-bold text-[#1a1a1a] leading-tight mb-6"
                         style={{ fontFamily: "var(--font-syne), sans-serif" }}
                     >
-                        Unlock <span className="text-[#8719C6]">Elite</span> Benefits
+                        Download The App
                     </h2>
-
-                    <p className="text-[#666] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-                        Join our exclusive membership program and experience premium perks that elevate your shopping.
-                    </p>
                 </div>
 
-                {/* Benefits Grid */}
-                <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-16">
+                {/* Benefits Grid - Now adjusted for 2 items */}
+                <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto mb-16">
                     {benefits.map((benefit, index) => (
                         <div
                             key={index}
@@ -96,15 +80,9 @@ export default function EliteSection() {
                             className="px-10 py-4 bg-[#8719C6] text-white font-bold uppercase tracking-wider rounded-full hover:bg-[#6d14a0] hover:shadow-lg hover:shadow-[#8719C6]/30 transition-all duration-300"
                             style={{ fontFamily: "var(--font-syne), sans-serif" }}
                         >
-                            Join Elite Now
+                            Download App
                         </button>
-
-
                     </div>
-
-                    <p className="mt-6 text-[#999] text-sm">
-                        Cancel anytime • No hidden fees • Instant activation
-                    </p>
                 </div>
             </div>
         </section>
