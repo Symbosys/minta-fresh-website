@@ -1,16 +1,19 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="bg-white py-12 border-t border-minta-secondary text-center md:text-left mt-12">
+        <footer className="bg-white py-5 border-t border-minta-secondary text-center md:text-left">
             <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
                 <div className="text-center md:text-left">
-                    <h2
-                        className="font-bold text-3xl text-minta-primary"
-                        style={{ fontFamily: "var(--font-syne), sans-serif" }}
-                    >
-                        MINTA FRESH
-                    </h2>
+                    <Image
+                        src="/assets/logo/minta-logo.jpeg"
+                        alt="MINTA FRESH Logo"
+                        width={300} // Adjust width as needed
+                        height={10} // Adjust height as needed
+                        className="object-contain"
+                        priority // Ensures the logo loads immediately
+                    />
                     <p className="text-minta-text-sec text-sm mt-2">
                         Minta Fresh is a Unit of Minta Club Pvt. Ltd
                     </p>

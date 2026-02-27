@@ -145,6 +145,7 @@ export default function DownloadSection() {
                                 className="w-full h-full object-cover"
                             />
                             <div className="scan-anim"></div>
+                           
                         </div>
                         <div className="text-left">
                             <p
@@ -155,10 +156,20 @@ export default function DownloadSection() {
                                 <br />
                                 INSTALL
                             </p>
+
+                            
                             {/* <p className="text-[#ff9fa3] text-xs mt-1 uppercase tracking-widest">
                                 Direct Links
                             </p> */}
                         </div>
+                        <Image
+                            src="/assets/logo/minta-logo.jpeg"
+                            alt="MINTA FRESH Logo"
+                            width={180} // Adjust width as needed
+                            height={10} // Adjust height as needed
+                            className="object-contain"
+                            priority // Ensures the logo loads immediately
+                        />
                     </div>
                 </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -21,19 +22,27 @@ export default function Navbar() {
     return (
         <>
             <nav
-                className={`${isHomePage ? "fixed" : "sticky"
-                    } top-0 w-full z-50 px-6 py-4 ${isHomePage
-                        ? "bg-black"
-                        : "bg-black backdrop-blur-md border-b border-white/10 shadow-sm"
-                    } flex justify-between items-center text-white`}
+                className={`${isHomePage ? "fixed" : "sticky"} 
+                    top-0 w-full z-50 px-6 py-4 
+                    ${isHomePage
+                        ? "bg-white"
+                        : "bg-white/90 backdrop-blur-md border-b border-black/10 shadow-sm"
+                    } flex justify-between items-center text-black`}
             >
+                {/* Logo Section */}
                 <Link
                     href="/"
-                    className="text-2xl font-bold tracking-tighter cursor-pointer z-50"
-                    style={{ fontFamily: "var(--font-syne), sans-serif" }}
+                    className="cursor-pointer z-50 flex items-center"
                     onClick={closeMenu}
                 >
-                    MINTA FRESH<span className="text-minta-primary">.</span>
+                    <Image
+                        src="/assets/logo/minta-logo.jpeg"
+                        alt="MINTA FRESH Logo"
+                        width={90}
+                        height={10}
+                        className="object-contain"
+                        priority
+                    />
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -86,38 +95,35 @@ export default function Navbar() {
                     )}
                     <Link
                         href="/download"
-                        className="border border-white/20 px-6 py-2 rounded-full text-xs uppercase tracking-widest hover:bg-minta-primary hover:text-white hover:border-transparent transition-all duration-300"
+                        className="border border-black/20 px-6 py-2 rounded-full text-xs uppercase tracking-widest hover:bg-minta-primary hover:text-white hover:border-transparent transition-all duration-300"
                     >
                         Download App
                     </Link>
                 </div>
 
-                {/* Hamburger Button */}
+                {/* Hamburger Button (Updated to black bars) */}
                 <button
                     onClick={toggleMenu}
                     className="md:hidden relative z-50 w-10 h-10 flex flex-col justify-center items-center gap-1.5"
                     aria-label="Toggle menu"
                 >
-                    <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-                    <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-                    <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+                    <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+                    <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+                    <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
                 </button>
             </nav>
 
             {/* Mobile Menu Overlay */}
             <div
-                className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-40 md:hidden transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-                    }`}
+                className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-40 md:hidden transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
                 onClick={closeMenu}
             ></div>
 
-            {/* Mobile Menu */}
+            {/* Mobile Menu (Kept Dark for Contrast) */}
             <div
-                className={`fixed top-0 right-0 h-full w-70 bg-[#1a1a1a] z-40 md:hidden transform transition-transform duration-300 ease-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-                    }`}
+                className={`fixed top-0 right-0 h-full w-70 bg-[#1a1a1a] z-40 md:hidden transform transition-transform duration-300 ease-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
             >
                 <div className="pt-24 px-6">
-                    {/* Mobile Navigation Links */}
                     <div className="flex flex-col gap-1">
                         {isHomePage && (
                             <>
@@ -180,7 +186,6 @@ export default function Navbar() {
                         </Link>
                     </div>
 
-                    {/* Mobile CTA Button */}
                     <div className="mt-8">
                         <Link
                             href="/download"
@@ -191,7 +196,6 @@ export default function Navbar() {
                         </Link>
                     </div>
 
-                    {/* Social Links */}
                     <div className="mt-8 flex gap-4">
                         <a
                             href="https://www.instagram.com/mintafresh_/"
