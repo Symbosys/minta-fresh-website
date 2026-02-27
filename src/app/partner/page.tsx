@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 
 import Link from "next/link";
 import { getVendorProfile, logout } from "@/action/vendor";
+import Image from "next/image";
 
 export default function PartnerPage() {
     const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
@@ -35,15 +36,21 @@ export default function PartnerPage() {
 
             <main className="bg-white">
                 {/* Hero Section with Dark Background */}
-                <section
-                    className="relative flex flex-col items-center justify-start pt-20 pb-10 md:pb-48 md:min-h-[550px]"
-                    style={{
-                        backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/partner-bg.jpg')`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundColor: '#1c1c1c'
-                    }}
-                >
+                {/* Hero Section with Image Background */}
+                {/* Removed overflow-hidden to prevent cutting the floating card */}
+                <section className="relative flex flex-col items-center justify-start pt-20 pb-24 md:pb-48 md:min-h-[550px] bg-[#1c1c1c]">
+                    {/* Background Image Layer */}
+                    <div className="absolute inset-0 z-0 overflow-hidden">
+                        <Image
+                            src="/assets/website-partner-with-us.png"
+                            alt="Partner Background"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
+                        <div className="absolute inset-0 bg-black/70"></div>
+                    </div>
+
                     {/* Hero Content */}
                     <div className="text-center px-6 relative z-10 w-full flex flex-col items-center">
                         <h1
@@ -106,9 +113,9 @@ export default function PartnerPage() {
                     </div>
 
                     {/* White Card - Documents Section - Desktop Only (Floating) */}
-                    <div className="hidden md:block absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-1/2 w-[90%] max-w-4xl bg-white rounded-xl shadow-xl p-6 md:p-8 z-20">
+                    {/* Increased z-index to z-30 to ensure it stays above the next section */}
+                    <div className="hidden md:block absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-1/2 w-[90%] max-w-4xl bg-white rounded-xl shadow-2xl p-6 md:p-8 z-30 border border-gray-100">
                         <div className="flex flex-col md:flex-row gap-6">
-                            {/* Left - Document List */}
                             <div className="flex-1">
                                 <h2 className="text-lg font-bold text-[#1c1c1c] mb-1">
                                     Get started: It only takes 10 minutes
@@ -117,77 +124,56 @@ export default function PartnerPage() {
                                     Please keep these documents and details ready for a smooth sign-up
                                 </p>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
-                                    {/* PAN Card */}
-                                    <div className="flex items-center gap-2">
-                                        <div className="w-5 h-5 rounded-full bg-minta-primary/10 flex items-center justify-center">
-                                            <i className="ri-check-line text-minta-primary text-xs"></i>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                                    <div className="flex items-center gap-3">
+                                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-minta-primary/10 flex items-center justify-center">
+                                            <i className="ri-check-line text-minta-primary text-xs font-bold"></i>
                                         </div>
-                                        <span className="text-sm text-[#1c1c1c]">PAN card</span>
+                                        <span className="text-sm text-[#1c1c1c] font-medium">PAN card</span>
                                     </div>
 
-                                    {/* GST */}
-                                    <div className="flex items-center gap-2">
-                                        <div className="w-5 h-5 rounded-full bg-minta-primary/10 flex items-center justify-center">
-                                            <i className="ri-check-line text-minta-primary text-xs"></i>
+                                    <div className="flex items-center gap-3">
+                                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-minta-primary/10 flex items-center justify-center">
+                                            <i className="ri-check-line text-minta-primary text-xs font-bold"></i>
                                         </div>
-                                        <span className="text-sm text-[#1c1c1c]">GST number, if applicable</span>
+                                        <span className="text-sm text-[#1c1c1c] font-medium">GST number, if applicable</span>
                                     </div>
 
-                                    {/* FSSAI */}
-                                    <div className="flex items-start gap-2">
-                                        <div className="w-5 h-5 rounded-full bg-minta-primary/10 flex items-center justify-center mt-0.5">
-                                            <i className="ri-check-line text-minta-primary text-xs"></i>
+                                    <div className="flex items-start gap-3">
+                                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-minta-primary/10 flex items-center justify-center mt-0.5">
+                                            <i className="ri-check-line text-minta-primary text-xs font-bold"></i>
                                         </div>
                                         <div>
-                                            <span className="text-sm text-[#1c1c1c]">FSSAI license</span>
-                                            <p className="text-xs text-gray-400">
-                                                Don&apos;t have a FSSAI license? <a href="https://foscos.fssai.gov.in/" target="_blank" rel="noopener noreferrer" className="text-minta-primary hover:underline">Apply here.</a>
+                                            <span className="text-sm text-[#1c1c1c] font-medium">FSSAI license</span>
+                                            <p className="text-[11px] text-gray-400 leading-tight mt-0.5">
+                                                No license? <a href="https://foscos.fssai.gov.in/" target="_blank" rel="noopener noreferrer" className="text-minta-primary hover:underline font-semibold">Apply here.</a>
                                             </p>
                                         </div>
                                     </div>
 
-                                    {/* Menu Images */}
-                                    <div className="flex items-start gap-2">
-                                        <div className="w-5 h-5 rounded-full bg-minta-primary/10 flex items-center justify-center mt-0.5">
-                                            <i className="ri-check-line text-minta-primary text-xs"></i>
+                                    <div className="flex items-start gap-3">
+                                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-minta-primary/10 flex items-center justify-center mt-0.5">
+                                            <i className="ri-check-line text-minta-primary text-xs font-bold"></i>
                                         </div>
                                         <div>
-                                            <span className="text-sm text-[#1c1c1c]">Menu and product images</span>
-                                            <p className="text-xs text-gray-400">
-                                                What is product image? <a href="#" className="text-minta-primary hover:underline">Refer here.</a>
+                                            <span className="text-sm text-[#1c1c1c] font-medium">Menu and product images</span>
+                                            <p className="text-[11px] text-gray-400 mt-0.5">
+                                                <a href="#" className="text-minta-primary hover:underline">Refer here</a> for examples.
                                             </p>
                                         </div>
                                     </div>
 
-                                    {/* Bank Details */}
-                                    <div className="flex items-center gap-2">
-                                        <div className="w-5 h-5 rounded-full bg-minta-primary/10 flex items-center justify-center">
-                                            <i className="ri-check-line text-minta-primary text-xs"></i>
+                                    <div className="flex items-center gap-3">
+                                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-minta-primary/10 flex items-center justify-center">
+                                            <i className="ri-check-line text-minta-primary text-xs font-bold"></i>
                                         </div>
-                                        <span className="text-sm text-[#1c1c1c]">Bank account details</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Right - Video Thumbnail */}
-                            <div className="shrink-0 w-full md:w-56">
-                                <div className="relative bg-gray-100 rounded-lg overflow-hidden aspect-video md:aspect-4/3 flex items-center justify-center group cursor-pointer">
-                                    <div className="absolute inset-0 bg-linear-to-br from-minta-primary/20 to-minta-accent/20"></div>
-                                    <div className="relative z-10 text-center">
-                                        <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform">
-                                            <i className="ri-play-fill text-white text-xl"></i>
-                                        </div>
-                                        <p className="text-xs text-gray-600 font-medium">
-                                            How to register your<br />shop on Minta Fresh
-                                        </p>
+                                        <span className="text-sm text-[#1c1c1c] font-medium">Bank account details</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-
                 {/* Mobile Documents Card - Separate Section */}
                 <section className="md:hidden bg-white px-4 py-6">
                     <div className="bg-white rounded-xl shadow-xl p-6 border border-gray-100">
@@ -247,21 +233,6 @@ export default function PartnerPage() {
                                     <i className="ri-check-line text-minta-primary text-xs"></i>
                                 </div>
                                 <span className="text-sm text-[#1c1c1c]">Bank account details</span>
-                            </div>
-                        </div>
-
-                        {/* Video Thumbnail - Mobile */}
-                        <div className="mt-6">
-                            <div className="relative bg-gray-100 rounded-lg overflow-hidden aspect-video flex items-center justify-center group cursor-pointer">
-                                <div className="absolute inset-0 bg-linear-to-br from-minta-primary/20 to-minta-accent/20"></div>
-                                <div className="relative z-10 text-center">
-                                    <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform">
-                                        <i className="ri-play-fill text-white text-xl"></i>
-                                    </div>
-                                    <p className="text-xs text-gray-600 font-medium">
-                                        How to register your shop on Minta Fresh
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>

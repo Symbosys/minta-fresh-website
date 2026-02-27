@@ -178,8 +178,14 @@ export default function PartnerStatusPage() {
             <header className="border-b border-gray-100 py-4 px-6 md:px-12 flex items-center justify-between bg-white sticky top-0 z-50">
                 <div className="flex items-center gap-2">
                     {/* Replace with Logo if available */}
-                    <span className="text-2xl font-extrabold text-minta-primary tracking-tight">minta<span className="text-green-500">fresh</span></span>
-                    <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded ml-2 font-medium">Partner</span>
+                    <Image
+                                            src="/assets/logo/minta-logo.jpeg"
+                                            alt="MINTA FRESH Logo"
+                                            width={90}
+                                            height={10}
+                                            className="object-contain"
+                                            priority
+                                        />
                 </div>
                 <button
                     onClick={() => router.push('/partner')}
